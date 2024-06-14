@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\annap\OneDrive\Desktop\techm w-assignments\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+561723859.index
+3662369159.index
+1468007358.index
+2070425316.index
+929292095.index
+168330020.index
+2927367871.index

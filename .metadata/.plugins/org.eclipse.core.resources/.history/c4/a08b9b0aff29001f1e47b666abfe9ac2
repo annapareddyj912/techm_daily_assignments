@@ -1,0 +1,7 @@
+package com.example;
+
+public class UserService {
+    public void registerUser(String username) {
+        System.out.println("User registered: " + username);
+    }
+}

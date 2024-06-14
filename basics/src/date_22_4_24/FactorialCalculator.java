@@ -1,0 +1,28 @@
+/*Factorial of a Number
+Write a Java program to calculate the factorial of a given number.using java */
+package date_22_4_24;
+
+import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter a number
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        
+        // Calculate the factorial
+        long factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+        
+        // Print the result
+        System.out.println("The factorial of " + number + " is " + factorial);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}

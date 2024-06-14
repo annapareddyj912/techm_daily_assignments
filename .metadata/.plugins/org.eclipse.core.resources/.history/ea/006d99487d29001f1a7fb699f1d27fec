@@ -1,0 +1,34 @@
+package date_25_4_24;
+
+
+
+import com.example.Person;
+
+public class SubclassExample extends Person {
+ public SubclassExample(String name, int age, String address) {
+     super(name, age, address);
+ }
+ 
+ public void printAgeAndAddress() {
+     // Accessing age and address inherited from Person
+     System.out.println("Age: " + age); // Can access age (protected)
+     System.out.println("Address: " + address); // Can access address (default/package-private)
+ }
+ 
+ public static void main(String[] args) {
+     // Creating an object of SubclassExample
+     SubclassExample person = new SubclassExample("John Doe", 30, "123 Main St");
+     
+     // Accessing inherited fields and printing them
+     person.printAgeAndAddress();
+     
+     // Attempt to access private field name results in a compilation error:
+     // System.out.println("Name: " + person.name);
+     
+     // Accessing name using getter method
+     System.out.println("Name: " + person.getName());
+     
+     // Attempt to access private field name using setter method
+     // person.setName("Jane Doe");
+ }
+}

@@ -1,0 +1,40 @@
+/*Create a Java class Book with a parameterized constructor that initializes title, author, and isbn. Create an object of this class and print its details.*/
+package date_25_4_24;
+
+public class Book {
+    private String title;
+    private String author;
+    private String isbn;
+    
+    // Parameterized constructor
+    public Book(String title, String author, String isbn) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+    }
+    
+    // Getter method for title
+    public String getTitle() {
+        return title;
+    }
+    
+    // Getter method for author
+    public String getAuthor() {
+        return author;
+    }
+    
+    // Getter method for isbn
+    public String getIsbn() {
+        return isbn;
+    }
+    
+    public static void main(String[] args) {
+        // Create an object of Book class with parameters
+        Book book = new Book("Java Programming", "Jyothi", "978-0135166307");
+        
+        // Print details of the book
+        System.out.println("Book Title: " + book.getTitle());
+        System.out.println("Book Author: " + book.getAuthor());
+        System.out.println("Book ISBN: " + book.getIsbn());
+    }
+}
